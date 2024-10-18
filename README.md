@@ -2,7 +2,7 @@
 
 Tournament brackets generator using Vue 3.
 
-base on [vue-tournament-bracket](https://github.com/RuiChen0101/vue-tournament) and combine ui style of [react-tournament-bracket](https://github.com/moodysalem/react-tournament-bracket)
+base on [vue-tournament-bracket](https://github.com/RuiChen0101/vue-tournament)
 
 ![example](./image/example.png)
 
