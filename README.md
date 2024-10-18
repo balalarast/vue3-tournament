@@ -20,7 +20,6 @@ Example:
 <template>
   <TournamentBracket
     :rounds="rounds"
-    format="default"
     @onMatchClick="onMatchClick"
     @onParticipantClick="onParticipantClick"
   />

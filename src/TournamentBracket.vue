@@ -81,9 +81,9 @@ export default defineComponent({
 
     const recursiveBracket = computed<IBracketNode|undefined>(() => {
       let copyRound = props.rounds;
-      if (props.format === 'courthive') {
-        copyRound = courthiveAdaptor(props.rounds);
-      }
+      // if (props.format === 'courthive') {
+      //   copyRound = courthiveAdaptor(props.rounds);
+      // }
       return transformBracket(copyRound);
     });
 
