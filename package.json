@@ -7,15 +7,14 @@
   "description": "Tournament brackets generator using Vue 3.",
   "main": "dist/tournament-bracket.umd.js",
   "module": "dist/tournament-bracket.mjs",
-  "types": "dist/TournamentBracket.vue.d.ts",
   "exports": {
     ".": {
       "import": "./dist/tournament-bracket.mjs",
-      "require": "./dist/tournament-bracket.umd.js",
-      "types": "./dist/TournamentBracket.vue.d.ts"
+      "require": "./dist/tournament-bracket.umd.js"
     },
     "./style.css": "./dist/style.css"
   },
+  "types": "dist/TournamentBracket.vue.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
