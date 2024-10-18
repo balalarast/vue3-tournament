@@ -1,6 +1,6 @@
 {
   "name": "vue3-tournament",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Balal Arast <arastbalal@gmail.com>",
   "description": "Tournament brackets generator using Vue 3.",
   "license": "MIT",
@@ -23,7 +23,7 @@
   ],
   "main": "dist/tournament-bracket.umd.js",
   "module": "dist/tournament-bracket.mjs",
-  "types": "dist/TournamentBracket.vue.d.ts",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/tournament-bracket.mjs",
