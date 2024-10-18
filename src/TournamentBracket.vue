@@ -19,7 +19,7 @@ import ITeam from "./interface/ITeam";
 import IFeedIn from "./interface/IFeedIn";
 import IMatch from './interface/IMatch';
 import BracketNode from './components/BracketNode.vue';
-import { courthiveAdaptor } from './adaptor/courthiveAdaptor';
+// import { courthiveAdaptor } from './adaptor/courthiveAdaptor';
 import { transform as transformBracket } from './recursiveBracket';
 
 export default defineComponent({

@@ -26,7 +26,7 @@ Example:
 </template>
 
 <script lang="ts">
-import { TournamentBracket } from "vue3-tournament"
+import { TournamentBracket, type IRound } from "vue3-tournament"
 import "vue3-tournament/style.css"
 
 const onMatchClick = (matchId: string | number): void => {
@@ -38,7 +38,7 @@ const onParticipantClick = (participant: any, match: any): void => {
   console.log("match", match)
 }
 
-const rounds = ref([
+const rounds = ref<IRound[]>([
   //Quarter
   {
     matchs: [

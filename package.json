@@ -30,6 +30,9 @@
       "require": "./dist/tournament-bracket.umd.js",
       "types": "./dist/index.d.ts"
     },
+    "./interface/*": {
+      "types": "./dist/interface/*.d.ts"
+    },
     "./style.css": "./dist/style.css"
   },
   "scripts": {
