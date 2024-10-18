@@ -31,7 +31,6 @@
     "dev": "vite",
     "build": "vite build && vue-tsc --emitDeclarationOnly",
     "types": "vue-tsc ",
-    "postinstall": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
