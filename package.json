@@ -27,8 +27,7 @@
   "exports": {
     ".": {
       "import": "./dist/tournament-bracket.mjs",
-      "require": "./dist/tournament-bracket.umd.js",
-      "types": "./dist/TournamentBracket.vue.d.ts"
+      "require": "./dist/tournament-bracket.umd.js"
     },
     "./style.css": "./dist/style.css"
   },
