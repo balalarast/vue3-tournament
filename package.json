@@ -1,6 +1,6 @@
 {
   "name": "vue3-tournament",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Balal Arast <arastbalal@gmail.com>",
   "description": "Tournament brackets generator using Vue 3.",
   "license": "MIT",
@@ -12,7 +12,12 @@
     "url": "https://github.com/balalarast/vue3-tournament/issues"
   },
   "homepage": "https://github.com/balalarast/vue3-tournament#readme",
-  "keywords": ["vue", "vue3", "tournament", "bracket"],
+  "keywords": [
+    "vue",
+    "vue3",
+    "tournament",
+    "bracket"
+  ],
   "files": [
     "dist"
   ],
