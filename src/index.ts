@@ -1,3 +1,4 @@
 import TournamentBracket from './TournamentBracket.vue'
+import IRound from './interface/IRound'
 
-export { TournamentBracket }
+export { TournamentBracket, type IRound }

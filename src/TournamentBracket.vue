@@ -142,4 +142,3 @@ export default defineComponent({
   background-color: var(--highlight-team-background-color);
 }
 </style>
-./interface/IRound./interface/IBracketNode./adaptor/courthiveAdaptor./recursiveBracket
