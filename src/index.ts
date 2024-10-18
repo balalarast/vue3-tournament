@@ -1,3 +1,3 @@
 import TournamentBracket from './TournamentBracket.vue'
 
-export default TournamentBracket
+export { TournamentBracket }
