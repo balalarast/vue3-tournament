@@ -1,6 +1,6 @@
 {
   "name": "vue3-tournament",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "author": "Balal Arast <arastbalal@gmail.com>",
   "description": "Tournament brackets generator using Vue 3.",
   "license": "MIT",
