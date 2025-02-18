@@ -226,7 +226,7 @@ export default defineComponent({
   position: absolute;
   background-color: gray;
   right: -25px;
-  height: calc(50% + 11px);
+  height: calc(50% + 10px);
   width: 2px;
   top: 50%;
 }
