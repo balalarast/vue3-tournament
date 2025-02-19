@@ -27,7 +27,8 @@ Example:
 
 <script lang="ts">
 import { TournamentBracket } from "vue3-tournament"
-import type IRound from "vue3-tournament/interface/IRound"
+// import type IRound from "vue3-tournament/interface/IRound"
+import type IRound from "vue3-tournament/dist/interface/IRound"
 import "vue3-tournament/style.css"
 
 const onMatchClick = (matchId: string | number): void => {
