@@ -36,8 +36,11 @@ export default defineComponent({
   setup(props, { emit }) {
     const getPlayerClass = (feedIn: IFeedIn): string => {
       let clazz = "";
-      if (props.highlightedTeamId === feedIn.id) {
+      if (props.highlightedTeamId === feedIn.id && !feedIn.disabled) {
         clazz += " highlight";
+      }
+      if(feedIn.disabled) {
+        clazz += " disabled";
       }
       return clazz;
     };

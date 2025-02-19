@@ -62,8 +62,12 @@ export default defineComponent({
         clazz = "winner";
       }
 
-      if (props.highlightedTeamId === team.id) {
+      if (props.highlightedTeamId === team.id && !team.disabled) {
         clazz += " highlight";
+      }
+      
+      if(team.disabled) {
+        clazz += " disabled";
       }
 
       return clazz;

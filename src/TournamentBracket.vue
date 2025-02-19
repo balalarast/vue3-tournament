@@ -141,4 +141,15 @@ export default defineComponent({
 .vt-item-feedIn .vt-feedIn.highlight {
   background-color: var(--highlight-team-background-color);
 }
+
+.vt-item-teams .vt-team.disabled,
+.vt-item-feedIn .vt-feedIn.disabled {
+  opacity: 0.5;
+  cursor: default !important;
+  pointer-events: none;
+}
+.vt-item-teams .vt-team.disabled .score,
+.vt-item-feedIn .vt-feedIn.disabled .score {
+  opacity: 0.7;
+}
 </style>
