@@ -11,14 +11,14 @@
         <span>{{ match?.title }}</span>
       </div>
     </template>
-    <template #team.name="{ team }">
+    <template #team.name="{ team, match }">
       <span class="name">{{ team.name }}</span>
     </template>
-    <template #team.score="{ team }">
+    <template #team.score="{ team, match }">
       <span class="score" v-if="team.score != undefined && team.score >= 0">{{ team.score }}</span>
     </template>
-    <template #feedIn="{ feedIn }">
-      <span class="name">{{ feedIn.name }}</span>
+    <template #feedIn="{ team, match }">
+      <span class="name">{{ team.name }}</span>
     </template>
     -->
   </TournamentBracket>
