@@ -11,7 +11,14 @@
         @onDeselectedTeam="unhighlightTeam"
         @onMatchClick="onMatchClick"
         @onParticipantClick="onParticipantClick"
-      />
+      >
+        <template #match.title="props">
+          <slot name="match.title" v-bind="props"></slot>
+        </template>
+        <template #feedIn="props">
+          <slot name="feedIn" v-bind="props"></slot>
+        </template>
+      </FeedIn>
     </div>
     <div v-else :class="getBracketNodeClass(bracketNode)">
       <GameMatch
@@ -21,7 +28,14 @@
         @onDeselectedTeam="unhighlightTeam"
         @onMatchClick="onMatchClick"
         @onParticipantClick="onParticipantClick"
-      />
+      >
+        <template #match.title="props">
+          <slot name="match.title" v-bind="props"></slot>
+        </template>
+        <template #team="props">
+          <slot name="team" v-bind="props"></slot>
+        </template>
+      </GameMatch>
     </div>
 
     <div v-if="bracketNode.children[0] || bracketNode.children[1]" class="vt-item-children">
@@ -33,7 +47,17 @@
           @onDeselectedTeam="unhighlightTeam"
           @onMatchClick="onMatchClick"
           @onParticipantClick="onParticipantClick"
-        />
+        >
+          <template #match.title="props: any">
+            <slot name="match.title" v-bind="props"></slot>
+          </template>
+          <template #team="props: any">
+            <slot name="team" v-bind="props"></slot>
+          </template>
+          <template #feedIn="props: any">
+            <slot name="feedIn" v-bind="props"></slot>
+          </template>
+        </BracketNode>
       </div>
       <div class="vt-item-child" v-if="bracketNode.children[1]">
         <BracketNode
@@ -43,7 +67,17 @@
           @onDeselectedTeam="unhighlightTeam"
           @onMatchClick="onMatchClick"
           @onParticipantClick="onParticipantClick"
-        />
+        >
+          <template #match.title="props: any">
+            <slot name="match.title" v-bind="props"></slot>
+          </template>
+          <template #team="props: any">
+            <slot name="team" v-bind="props"></slot>
+          </template>
+          <template #feedIn="props: any">
+            <slot name="feedIn" v-bind="props"></slot>
+          </template>
+        </BracketNode>
       </div>
     </div>
   </div>
@@ -262,5 +296,6 @@ export default defineComponent({
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 }
 </style>

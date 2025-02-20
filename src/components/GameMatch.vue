@@ -1,9 +1,11 @@
 <template>
   <div class="vt-item-teams">
     <div>
-      <div class="title">
-        <span>{{ bracketNode.match?.title }}</span>
-      </div>
+      <slot name="match.title" v-bind="{ match: bracketNode.match }">
+        <div class="title">
+          <span>{{ bracketNode.match?.title }}</span>
+        </div>
+      </slot>
       <div
         :class="[
           'vt-team',
@@ -14,8 +16,10 @@
         @mouseleave="unhighlightTeam"
         @click="onClick(bracketNode.match!.team1!)"
       >
-        <span class="name">{{ bracketNode.match!.team1!.name }}</span>
-        <span class="score" v-if="bracketNode.match!.team1!.score != undefined && bracketNode.match!.team1!.score >= 0">{{ bracketNode.match!.team1!.score }}</span>
+        <slot name="team" v-bind="{ team: bracketNode.match!.team1! }">
+          <span class="name">{{ bracketNode.match!.team1!.name }}</span>
+          <span class="score" v-if="bracketNode.match!.team1!.score != undefined && bracketNode.match!.team1!.score >= 0">{{ bracketNode.match!.team1!.score }}</span>
+        </slot>
       </div>
 
       <div
@@ -28,8 +32,10 @@
         @mouseleave="unhighlightTeam"
         @click="onClick(bracketNode.match!.team2!)"
       >
-        <span class="name">{{ bracketNode.match!.team2!.name }}</span>
-        <span class="score" v-if="bracketNode.match!.team2!.score != undefined && bracketNode.match!.team2!.score >= 0">{{ bracketNode.match!.team2!.score }}</span>
+        <slot name="team" v-bind="{ team: bracketNode.match!.team2! }">
+          <span class="name">{{ bracketNode.match!.team2!.name }}</span>
+          <span class="score" v-if="bracketNode.match!.team2!.score != undefined && bracketNode.match!.team2!.score >= 0">{{ bracketNode.match!.team2!.score }}</span>
+        </slot>
       </div>
     </div>
   </div>

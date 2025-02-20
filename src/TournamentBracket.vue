@@ -7,7 +7,17 @@
       @onDeselectedTeam="unhighlightTeam"
       @onMatchClick="onMatchClick"
       @onParticipantClick="onParticipantClick"
-    />
+    >
+      <template #match.title="props">
+        <slot name="match.title" v-bind="props"></slot>
+      </template>
+      <template #team="props">
+        <slot name="team" v-bind="props"></slot>
+      </template>
+      <template #feedIn="props">
+        <slot name="feedIn" v-bind="props"></slot>
+      </template>
+    </BracketNode>
   </div>
 </template>
 
