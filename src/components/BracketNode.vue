@@ -35,6 +35,12 @@
         <template #team="props">
           <slot name="team" v-bind="props"></slot>
         </template>
+        <template #team.name="props">
+          <slot name="team.name" v-bind="props"></slot>
+        </template>
+        <template #team.score="props">
+          <slot name="team.score" v-bind="props"></slot>
+        </template>
       </GameMatch>
     </div>
 
@@ -53,6 +59,12 @@
           </template>
           <template #team="props: any">
             <slot name="team" v-bind="props"></slot>
+          </template>
+          <template #team.name="props: any">
+            <slot name="team.name" v-bind="props"></slot>
+          </template>
+          <template #team.score="props: any">
+            <slot name="team.score" v-bind="props"></slot>
           </template>
           <template #feedIn="props: any">
             <slot name="feedIn" v-bind="props"></slot>
@@ -73,6 +85,12 @@
           </template>
           <template #team="props: any">
             <slot name="team" v-bind="props"></slot>
+          </template>
+          <template #team.name="props: any">
+            <slot name="team.name" v-bind="props"></slot>
+          </template>
+          <template #team.score="props: any">
+            <slot name="team.score" v-bind="props"></slot>
           </template>
           <template #feedIn="props: any">
             <slot name="feedIn" v-bind="props"></slot>

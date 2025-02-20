@@ -23,7 +23,8 @@ Example:
     @onMatchClick="onMatchClick"
     @onParticipantClick="onParticipantClick"
   >
-    <!-- <template #match.title="{ match }">
+    <!--
+    <template #match.title="{ match }">
       <div class="title">
         <span>{{ match?.title }}</span>
       </div>
@@ -32,9 +33,16 @@ Example:
       <span class="name">{{ team.name }}</span>
       <span class="score" v-if="team.score != undefined && team.score >= 0">{{ team.score }}</span>
     </template>
+    <template #team.name="{ team }">
+      <span class="name">{{ team.name }}</span>
+    </template>
+    <template #team.score="{ team }">
+      <span class="score" v-if="team.score != undefined && team.score >= 0">{{ team.score }}</span>
+    </template>
     <template #feedIn="{ feedIn }">
       <span class="name">{{ feedIn.name }}</span>
-    </template> -->
+    </template>
+    -->
   </TournamentBracket>
 </template>
 

@@ -14,6 +14,12 @@
       <template #team="props">
         <slot name="team" v-bind="props"></slot>
       </template>
+      <template #team.name="props">
+        <slot name="team.name" v-bind="props"></slot>
+      </template>
+      <template #team.score="props">
+        <slot name="team.score" v-bind="props"></slot>
+      </template>
       <template #feedIn="props">
         <slot name="feedIn" v-bind="props"></slot>
       </template>
