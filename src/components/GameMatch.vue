@@ -16,11 +16,11 @@
         @mouseleave="unhighlightTeam"
         @click="onClick(bracketNode.match!.team1!)"
       >
-        <slot name="team" v-bind="{ team: bracketNode.match!.team1! }">
+        <slot name="team" v-bind="{ team: bracketNode.match!.team1!, match: bracketNode.match }">
           <slot name="team.name" v-bind="{ team: bracketNode.match!.team1! }">
             <span class="name">{{ bracketNode.match!.team1!.name }}</span>
           </slot>
-          <slot name="team.score" v-bind="{ team: bracketNode.match!.team1! }">
+          <slot name="team.score" v-bind="{ team: bracketNode.match!.team1!, match: bracketNode.match }">
             <span class="score" v-if="bracketNode.match!.team1!.score != undefined && bracketNode.match!.team1!.score >= 0">{{ bracketNode.match!.team1!.score }}</span>
           </slot>
         </slot>
@@ -37,10 +37,10 @@
         @click="onClick(bracketNode.match!.team2!)"
       >
         <slot name="team" v-bind="{ team: bracketNode.match!.team2! }">
-          <slot name="team.name" v-bind="{ team: bracketNode.match!.team2! }">
+          <slot name="team.name" v-bind="{ team: bracketNode.match!.team2!, match: bracketNode.match }">
             <span class="name">{{ bracketNode.match!.team2!.name }}</span>
           </slot>
-          <slot name="team.score" v-bind="{ team: bracketNode.match!.team2! }">
+          <slot name="team.score" v-bind="{ team: bracketNode.match!.team2!, match: bracketNode.match }">
             <span class="score" v-if="bracketNode.match!.team2!.score != undefined && bracketNode.match!.team2!.score >= 0">{{ bracketNode.match!.team2!.score }}</span>
           </slot>
         </slot>

@@ -12,7 +12,7 @@
         @mouseleave="unhighlightTeam"
         @click="onClick(bracketNode.match!.feedIn!)"
       >
-        <slot name="feedIn" v-bind="{ feedIn: bracketNode.match?.feedIn }">
+        <slot name="feedIn" v-bind="{ feedIn: bracketNode.match?.feedIn, match: bracketNode.match }">
           <span class="name">{{ bracketNode.match?.feedIn?.name }}</span>
         </slot>
       </div>
