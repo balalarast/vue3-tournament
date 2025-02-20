@@ -22,7 +22,20 @@ Example:
     :rounds="rounds"
     @onMatchClick="onMatchClick"
     @onParticipantClick="onParticipantClick"
-  />
+  >
+    <!-- <template #match.title="{ match }">
+      <div class="title">
+        <span>{{ match?.title }}</span>
+      </div>
+    </template>
+    <template #team="{ team }">
+      <span class="name">{{ team.name }}</span>
+      <span class="score" v-if="team.score != undefined && team.score >= 0">{{ team.score }}</span>
+    </template>
+    <template #feedIn="{ feedIn }">
+      <span class="name">{{ feedIn.name }}</span>
+    </template> -->
+  </TournamentBracket>
 </template>
 
 <script lang="ts">
