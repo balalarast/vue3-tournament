@@ -33,7 +33,7 @@ export default defineComponent({
       default: () => ({}),
     },
     highlightedTeamId: {
-      type: String,
+      type: [String, Number],
       default: undefined,
     },
   },
